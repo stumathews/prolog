@@ -31,3 +31,6 @@ lower(all).
 
 gym_day(Day) :- gym(Day).
 longrun_gym_day(Day) :- gym_day(Day), longrun(Day).
+exercises_day(Day,Ex) :- exercise(Ex, Day).
+upper_days(Day,Ex) :- upper(Ex), exercise(Ex, Day).
+lower_days(Day,Ex) :- lower(Ex), exercise(Ex, Day).
